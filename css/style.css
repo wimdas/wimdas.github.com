@@ -1,0 +1,247 @@
+/*!
+ * Project WiMDAS Public Website Style Sheet
+ * http://wimdas.github.com/
+ * 
+ * Copyright 2012 Blake Rohde, Joel Tanzi, Michael Albert.
+ * MPL 2.0, see LICENSE for more details.
+ */
+html {
+    color:#000;
+    font-family:'Open Sans',Tahoma,Geneva,sans-serif;
+    font-size:17px; /*base_font_size*/
+    font-weight:300;
+    line-height:25px;
+}
+body {
+    margin:0px;
+    padding:0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:0;
+    padding:7px 0 0 0;
+    
+    font-size:24px;
+    font-weight:300;
+    line-height:26px;
+}
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
+        text-decoration:none;
+    }
+    h1 a:focus,
+    h1 a:hover,
+    h2 a:focus,
+    h2 a:hover,
+    h3 a:focus,
+    h3 a:hover,
+    h4 a:focus,
+    h4 a:hover,
+    h5 a:focus,
+    h5 a:hover,
+    h6 a:focus,
+    h6 a:hover {
+        text-decoration:underline;
+    }
+
+h2 {
+    font-size:22px;
+    line-height:22px;
+}
+h3 {
+    font-size:20px;
+    line-height:22px;
+}
+h4 {
+    font-size:18px;
+    line-height:22px;
+}
+h5 {
+    font-size:16px;
+    line-height:20px;
+}
+h6 {
+    font-size:16px;
+    line-height:20px;
+    text-transform:uppercase;
+}
+p {
+    margin:14px 0;
+    padding:0;
+}
+hr {
+}
+a {
+    outline:0;
+    
+    color:#000;
+    text-decoration:underline;
+}
+    a:focus,
+    a:hover {
+        color:#666;
+    }
+figure {
+    margin:0;
+    padding:0;
+}
+figure.center {
+    margin:0 auto;
+}
+figure.left {
+    float:left;
+}
+figure.right {
+    float:right;
+}
+    figure figcaption {
+        color:#333;
+        font-size:14px; /*base_font_size-3*/
+        text-align:left;
+    }
+pre,
+code {
+    background-color:rgba(0,0,0,0.035);
+    overflow-x:auto;
+    padding:7px;
+    
+    color:#333;
+    font-family:monospace,serif;
+    font-size:17px; /*base_font_size*/
+}
+img {
+    border:0;
+}
+strong {
+    font-weight:400;
+}
+small {
+    font-size:15px; /*base_font_size-2*/
+}
+
+
+header#header,
+section#content,
+footer#footer {
+    margin:0 auto;
+    padding:0;
+    width:960px;
+}
+    /*clear*/
+    header#header:after,
+    section#content:after,
+    footer#footer:after {
+        clear:both;
+        content:'';
+        display:block;
+    }
+
+
+header#header {
+    padding:35px 0 0 0;
+    
+    font-size:18px;
+    line-height:18px;
+}
+    header#header h1 {
+        float:left;
+        margin:0;
+        padding:0;
+        
+        font-size:38px; /*base_font_size+2*/
+        line-height:38px;
+    }
+        header#header h1 a {
+            display:block;
+            margin:0px;
+            padding:7px 7px 7px 0;
+        }
+            header#header h1 a:focus,
+            header#header h1 a:hover {
+                text-decoration:none;
+            }
+        header#header h1 small {
+            display:block;
+            padding:7px 0;
+            
+            color:#666;
+            font-size:14px; /*base_font_size-3*/
+            line-height:14px;
+        }
+    
+    header#header nav {
+        float:right;
+        margin:0;
+        padding:0;
+    }
+        header#header nav > ul {
+            list-style:none outside none;
+            margin:0;
+            padding:0;
+        }
+            /*clear*/
+            header#header nav > ul:after {
+                clear:both;
+                content:'';
+                display:block;
+            }
+            header#header nav > ul > li {
+                float:left;
+            }
+                header#header nav > ul > li > a {
+                    display:block;
+                    float:none;
+                    margin:0px;
+                    padding:24px 14px 11px 14px;
+
+                    text-decoration:none;
+                }
+                header#header nav > ul > li:last-child > a {
+                    padding-right:0;
+                }
+
+
+section#content {
+}
+    section#content > section {
+        padding:28px 0;
+    }
+        section#content > section > header {
+            padding:28px 0 0 0;
+        }
+            section#content > section > header hgroup {
+                border:1px solid #ccc;
+                border-width:1px 0 0 0;
+            }
+            section#content > section > header h1 {
+                background-color:#fff;
+                display:inline;
+                padding:7px;
+                position:relative;
+                top:-13px;
+                
+                font-size:15px; /*base_font_size-2*/
+                text-transform:uppercase;
+            }
+        section#content > section article {
+            padding:14px 0;
+        }
+            section#content > section:first-child {
+                margin-top:0;
+            }
+        section#content > section > article header h2 {
+            font-size:17px; /*base_font_size*/
+            font-style:italic;
+        }
+
+footer#footer {
+    padding:14px 0 28px 0;
+}
